@@ -55,7 +55,20 @@ function init()
         ({
             size: size, map: particle_sprite, blending: THREE.AdditiveBlending, depthTest: false, transparent : true
         });
-        materials[i].color.setRGB(1, 0.75, 0);
+        var choice = Math.floor(Math.random() * 3) + 1  
+        if (choice == 1)
+        {
+            materials[i].color.setRGB(0.4, 0, 0.7);
+        }
+        else if (choice == 2)
+        {
+            materials[i].color.setRGB(0, 0.2, 1);
+        }
+        else
+        {
+            materials[i].color.setRGB(0, 1, 1);
+        }
+        
         materials[i].opacity = Math.random() + 0.7;
         if (materials[i].opacity >= 1)
         {
