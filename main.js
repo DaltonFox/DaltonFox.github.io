@@ -286,7 +286,7 @@ function render()
             document.getElementById("menu").style.position = "absolute";
             document.getElementById("menu").style.borderTop = "2px solid black";
             document.getElementById("menu").style.borderBottom = "none";
-            document.getElementById("menu").style.height = "10vh";
+            document.getElementById("menu").style.height = "12vh";
             scrollpast = false;
         }
     }
