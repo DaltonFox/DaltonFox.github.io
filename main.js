@@ -30,6 +30,7 @@ function init()
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
     container.appendChild( renderer.domElement );
+    scrollpast = false;
 
     // Particle texture initialization
     var textureLoader = new THREE.TextureLoader();
@@ -39,14 +40,14 @@ function init()
     for ( i = 0; i < scene_density; i ++ )
     {
         var vertex = new THREE.Vector3();
-        vertex.x = Math.random() * 1500 - 750;
-        vertex.y = Math.random() * 1500 - 750;
-        vertex.z = Math.random() * 1500 - 750;
+        vertex.x = Math.random() * 2500 - 1250;
+        vertex.y = Math.random() * 2500 - 1250;
+        vertex.z = Math.random() * 2500 - 1250;
         geometry.vertices.push( vertex );
     }
 
     // Populate generated points at x number of sets of x size
-    var size_sets = [60, 40, 25];
+    var size_sets = [90, 60, 30];
     for ( i = 0; i < 3; i ++ )
     {
         size = size_sets[i];
@@ -262,6 +263,33 @@ function render()
     
     // Movement Update
     var time = Date.now() * 0.0000722;
+
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+
+    if (scrollTop > (window.innerHeight - (window.innerHeight * 0.08)))
+    {
+        if (!scrollpast)
+        {
+            document.getElementById("menu").style.top = "0";
+            document.getElementById("menu").style.position = "fixed";
+            document.getElementById("menu").style.borderBottom = "2px solid black";
+            document.getElementById("menu").style.borderTop = "none";
+            document.getElementById("menu").style.height = "8vh";
+            scrollpast = true;
+        }
+    }
+    else
+    {
+        if (scrollpast)
+        {
+            document.getElementById("menu").style.top = "92%";
+            document.getElementById("menu").style.position = "absolute";
+            document.getElementById("menu").style.borderTop = "2px solid black";
+            document.getElementById("menu").style.borderBottom = "none";
+            document.getElementById("menu").style.height = "10vh";
+            scrollpast = false;
+        }
+    }
 
     // PC Mouse Input
     if (mobile_device === false)

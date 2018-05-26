@@ -47,7 +47,7 @@ li{
     font-family: 'Open Sans', sans-serif !important;
     font-size: 62px;
     color: #000000;
-    max-width:800px;
+    max-width: 800px;
     word-wrap: break-word;
     list-style-type: none;
     line-height: 200%;
@@ -146,9 +146,8 @@ main.img{
     width: 100vw;
     z-index: 1;
     background-color: rgba(255,255,255,1);
-    height:8vh;
-    transition: opacity, top 1.75s ease 0s;
-    border-bottom: 2px solid black;
+    height:10vh;
+    transition: opacity, ease 0s;
     border-top: 2px solid black;
 }
 
@@ -184,7 +183,7 @@ a:hover{
 #main-divider1 {
     clip-path: polygon(0 96%, 100% 100%, 100% 4%, 0 0);
     position: absolute;
-    top: 155.65vh;
+    top: 165.65vh;
     width: 100%;
     height: 70.60vh;
     background-color: rgb(255, 215, 80);
@@ -193,7 +192,7 @@ a:hover{
 #main-divider2 {
     clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
     position: absolute;
-    top: 288.8vh;
+    top: 298.8vh;
     width: 100%;
     height: 70.70vh;
     background-color: rgb(255, 215, 80);
@@ -201,7 +200,7 @@ a:hover{
 
 #main-divider3 {
     position: absolute;
-    top: 348.8vh;
+    top: 358.8vh;
     width: 100%;
     height: 9vh;
     z-index: 1;
@@ -221,7 +220,7 @@ a:hover{
 #main-what {
     position: absolute;
     background-color: rgb(255,255,255);
-    top: 92vh;
+    top: 102vh;
     text-align: left;
     padding-left: 3.5vw;
     font-size: 16px;
@@ -238,7 +237,7 @@ a:hover{
     z-index: 0;
     clip-path: polygon(0 96%, 100% 100%, 100% 4%, 0 0);
     position: absolute;
-    top: 156vh;
+    top: 166vh;
     width: 100%;
     height: 70vh;
     background-color: rgb(225, 225, 225)
@@ -249,7 +248,7 @@ a:hover{
     padding-left: 3.5vw;
     font-size: 16px;
     position: absolute;
-    top: 224vh;
+    top: 234vh;
     width: 100%;
     height: 70.5vh;
     z-index: -1;
@@ -262,7 +261,7 @@ a:hover{
      font-size: 16px;
      z-index: 0;
      clip-path: polygon(0 2.5%, 100% 0, 100% 96%, 0% 100%);
-     position: absolute; top: 289.15vh;
+     position: absolute; top: 299.15vh;
      width: 100%;
      height: 82vh;
      background-color: rgb(225, 225, 225)
@@ -274,7 +273,7 @@ a:hover{
     padding-left: 3.5vw;
     font-size: 16px;
     z-index: 0;
-    top: 349vh;
+    top: 359vh;
     width: 100%;
     height: 30vh;
 
@@ -283,7 +282,7 @@ a:hover{
 
 #main-footer {
     position: absolute;
-    top: 389vh;
+    top: 399vh;
     width: 100%;
     height: 10vh;
     border-top: 2px solid rgba(0,0,0, 1);
