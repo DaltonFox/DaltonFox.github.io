@@ -24,7 +24,7 @@ function init()
     camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 8500 );
     camera.position.z = 800;
     scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2( 0xffffff, 0.00000005 );
+    scene.fog = new THREE.FogExp2( 0xffffff, 0.00001 );
     geometry = new THREE.Geometry();
     renderer = new THREE.WebGLRenderer( {alpha : true});
     renderer.setPixelRatio( window.devicePixelRatio );
@@ -55,27 +55,11 @@ function init()
         ({
             size: size, map: particle_sprite, blending: THREE.AdditiveBlending, depthTest: false, transparent : true
         });
-        var choice = Math.floor(Math.random() * 3) + 1  
-        if (choice == 1)
-        {
-            materials[i].color.setRGB(0.4, 0, 0.7);
-        }
-        else if (choice == 2)
-        {
-            materials[i].color.setRGB(0, 0.2, 1);
-        }
-        else
-        {
-            materials[i].color.setRGB(0, 1, 1);
-        }
-        
-        materials[i].opacity = Math.random() + 0.7;
-        if (materials[i].opacity >= 1)
-        {
-            materials[i].opacity = 0.98
-        }
+
+        materials[i].color.setRGB(0, 0, 0);
+        materials[i].opacity = 1;
         opacities[i] = materials[i].opacity;
-        materials[i].opacity = 0;
+        materials[i].opacity = 1;
         particles = new THREE.Points( geometry, materials[i] );
         particles.rotation.x = Math.random() * 9;
         particles.rotation.y = Math.random() * 9;
@@ -232,7 +216,7 @@ function onWindowResize()
 
     if (window.innerWidth > hbuffer)
     {
-        document.getElementById("nav-logo").style.left = ((window.innerWidth - hbuffer) / 2 + 20).toString() + "px";
+        //document.getElementById("nav-logo").style.left = ((window.innerWidth - hbuffer) / 2 + 20).toString() + "px";
         document.getElementById("nav-button").style.left = (window.innerWidth - ((window.innerWidth - hbuffer)/2) - 100).toString() + "px";
         document.getElementById("left-buffer").style.width = ((window.innerWidth - hbuffer) / 2).toString() + "px";
         document.getElementById("right-buffer").style.width = ((window.innerWidth - hbuffer) / 2).toString() + "px";
@@ -240,14 +224,14 @@ function onWindowResize()
     }
     else
     {
-        document.getElementById("nav-logo").style.left = (20).toString() + "px";
+        //document.getElementById("nav-logo").style.left = (20).toString() + "px";
         document.getElementById("nav-button").style.left = (window.innerWidth - 80).toString() + "px";
         document.getElementById("left-buffer").style.width = 0;
         document.getElementById("right-buffer").style.width = 0;
         document.getElementById("right-buffer").style.left = "100vw";
     }
 
-    document.getElementById("main-quoter").style.fontSize = (l_scale * 1.55).toString() + "px";
+    document.getElementById("main-quoter").style.fontSize = (l_scale * 3.55).toString() + "px";
 
     for(var i = 0; i < pElements.length; i++)
     {
