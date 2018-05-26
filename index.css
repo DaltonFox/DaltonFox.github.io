@@ -19,6 +19,20 @@ h2 {
     color: #505050;
 }
 
+#shroud{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 800px) {
+    #shroud{
+        width: auto;
+        height: 100%;
+        margin-left: -75vh;
+    }
+}
+
+
+
 li{
     font-family: 'Open Sans', sans-serif !important;
     font-size: 12px;
