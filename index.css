@@ -27,11 +27,9 @@ h2 {
     #shroud{
         width: auto;
         height: 100%;
-        margin-left: -75vh;
+        margin-left: -50vh;
     }
 }
-
-
 
 li{
     font-family: 'Open Sans', sans-serif !important;
@@ -108,7 +106,7 @@ h3{
 }
 
 .menu_footer {
-    border-left: 2px solid rgb(80, 176, 255);
+    border-left: 2px solid rgb(255, 215, 80);
     padding-left: 2.5vw;
     padding-top: 0.25vh;
     padding-bottom: 0.25vh;
@@ -155,11 +153,11 @@ main.img{
 }
 
 #left-buffer{
-    background-image: -webkit-linear-gradient(left, rgba(210,210,210,0.7), rgba(250,0,0,0.005));
+    background-image: -webkit-linear-gradient(left, rgba(210,210,210,0.7), rgba(250,25,0,0.005));
 }
 
 #right-buffer{
-    background-image: -webkit-linear-gradient(right, rgba(210,210,210,0.7), rgba(250,0,0,0.005));
+    background-image: -webkit-linear-gradient(right, rgba(210,210,210,0.7), rgba(250,25,0,0.005));
 }
 
 a, a:visited, a:hover, a:active {
@@ -186,29 +184,29 @@ a:hover{
 #main-divider1 {
     clip-path: polygon(0 96%, 100% 100%, 100% 4%, 0 0);
     position: absolute;
-    top: 134.65vh;
+    top: 155.65vh;
     width: 100%;
     height: 70.60vh;
-    background-color: rgb(80, 176, 255);
+    background-color: rgb(255, 215, 80);
 }
 
 #main-divider2 {
     clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
     position: absolute;
-    top: 267.8vh;
+    top: 288.8vh;
     width: 100%;
     height: 70.70vh;
-    background-color: rgb(80, 176, 255);
+    background-color: rgb(255, 215, 80);
 }
 
 #main-divider3 {
     position: absolute;
-    top: 327.8vh;
+    top: 348.8vh;
     width: 100%;
     height: 9vh;
     z-index: 1;
     border-top: 3px solid black;
-    background: linear-gradient(to bottom, rgba(80, 176, 255, 0.4) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 215, 80, 0.4) 0%,rgba(255,255,255,0) 100%);
     border-bottom: 2px solid white;
 }
 
@@ -223,7 +221,7 @@ a:hover{
 #main-what {
     position: absolute;
     background-color: rgb(255,255,255);
-    top: 100vh;
+    top: 92vh;
     text-align: left;
     padding-left: 3.5vw;
     font-size: 16px;
@@ -240,7 +238,7 @@ a:hover{
     z-index: 0;
     clip-path: polygon(0 96%, 100% 100%, 100% 4%, 0 0);
     position: absolute;
-    top: 135vh;
+    top: 156vh;
     width: 100%;
     height: 70vh;
     background-color: rgb(225, 225, 225)
@@ -251,7 +249,7 @@ a:hover{
     padding-left: 3.5vw;
     font-size: 16px;
     position: absolute;
-    top: 203vh;
+    top: 224vh;
     width: 100%;
     height: 70.5vh;
     z-index: -1;
@@ -264,7 +262,7 @@ a:hover{
      font-size: 16px;
      z-index: 0;
      clip-path: polygon(0 2.5%, 100% 0, 100% 96%, 0% 100%);
-     position: absolute; top: 268.15vh;
+     position: absolute; top: 289.15vh;
      width: 100%;
      height: 82vh;
      background-color: rgb(225, 225, 225)
@@ -276,7 +274,7 @@ a:hover{
     padding-left: 3.5vw;
     font-size: 16px;
     z-index: 0;
-    top: 328vh;
+    top: 349vh;
     width: 100%;
     height: 30vh;
 
@@ -285,7 +283,7 @@ a:hover{
 
 #main-footer {
     position: absolute;
-    top: 368vh;
+    top: 389vh;
     width: 100%;
     height: 10vh;
     border-top: 2px solid rgba(0,0,0, 1);
@@ -336,7 +334,7 @@ a:hover{
     pointer-events: none;
     transition: opacity 0.20s ease 0s;
     opacity: 0;
-    background-color: rgb(80, 176, 255);
+    background-color: rgb(255, 215, 80);
     width: 100vw;
     height: 100vh;
     z-index: 2;
