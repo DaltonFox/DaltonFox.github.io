@@ -6,7 +6,7 @@
     z-index: 99;
     height: 100%;
     width: 100%;
-    left: 93vw;
+    left: 92%;
     top: 2.0vh;
     height: 48px;
     width: 48px;
@@ -288,7 +288,7 @@ a:hover{
     text-align: left;
     padding-left: 3.5vw;
     font-size: 16px;
-    border-top: 100px solid whit;
+    border-top: 200px solid whit;
     width:100vw;
     height:100vh;
     z-index: 0;
