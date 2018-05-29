@@ -75,74 +75,12 @@ function init()
         window.addEventListener( 'resize', onWindowResize, false );
         document.addEventListener( 'mousemove', onDocumentMouseMove, false );
         onWindowResize();
-        document.getElementById("sub-menu").style.paddingTop = "5vh";
         var dElements = document.getElementsByClassName("footer_div");
         for(var i = 0; i < dElements.length; i++)
         {
             dElements[i].style.height = "55px";
         }
     }
-
-    // Sub Menu Controls
-    var sub_menu_open = false;
-    var pull_up_open = false;
-    window.onload = function()
-    {
-        document.getElementById("nav-button").onclick = function sub_menu_control()
-        {
-            if (sub_menu_open === false)
-            {
-                document.getElementById("sub-menu").style.opacity = 1;
-                document.getElementById("sub-menu").style.left = "0vw";
-                document.getElementById("sub-menu").style.top = "0vh";
-                document.getElementById("nav-button").src = "Assets/exit.png";
-                document.body.style.overflow = "hidden";
-                sub_menu_open = true
-            }
-            else if (sub_menu_open === true)
-            {
-                document.getElementById("sub-menu").style.opacity = 0;
-                document.getElementById("sub-menu").style.top = "-3vh";
-                document.getElementById("sub-menu").style.left = "100vw";
-                document.getElementById("nav-button").src = "Assets/drop.png";
-                document.body.style.overflow = "scroll";
-                sub_menu_open = false
-            }
-            if (pull_up_open)
-            {
-                document.getElementById("pull-up").style.opacity = 0;
-                document.getElementById("pull-up").style.top = "-3vw";
-                document.getElementById("pull-up").style.left = "100vw";
-                pull_up_open = false
-            }
-        };
-        document.getElementById("footer-terms").onclick = function sub_menu_terms()
-        {
-            document.getElementById("pull-up").scrollTop = 0;
-            document.getElementById("pull-up").style.opacity = 1;
-            document.getElementById("pull-up-head").textContent = "Terms of Service";
-            document.getElementById("pull-up-text").textContent = window.termsofservice;
-            document.getElementById("pull-up").style.left = "0vw";
-            document.getElementById("pull-up").style.top = "0vh";
-            document.getElementById("nav-button").src = "Assets/exit.png";
-            document.body.style.overflow = "hidden";
-            sub_menu_open = true;
-            pull_up_open = true;
-        };
-        document.getElementById("footer-policy").onclick = function sub_menu_policy()
-        {
-            document.getElementById("pull-up").scrollTop = 0;
-            document.getElementById("pull-up").style.opacity = 1;
-            document.getElementById("pull-up-head").textContent = "Privacy Policy";
-            document.getElementById("pull-up-text").textContent = window.privacypolicy;
-            document.getElementById("pull-up").style.left = "0vw";
-            document.getElementById("pull-up").style.top = "0vh";
-            document.getElementById("nav-button").src = "Assets/exit.png";
-            document.body.style.overflow = "hidden";
-            sub_menu_open = true;
-            pull_up_open = true;
-        }
-    };
 }
 
 function onDocumentMouseMove( event )
@@ -217,22 +155,18 @@ function onWindowResize()
 
     if (window.innerWidth > hbuffer)
     {
-        //document.getElementById("nav-logo").style.left = ((window.innerWidth - hbuffer) / 2 + 20).toString() + "px";
-        document.getElementById("nav-button").style.left = (window.innerWidth - ((window.innerWidth - hbuffer)/2) - 100).toString() + "px";
-        document.getElementById("left-buffer").style.width = ((window.innerWidth - hbuffer) / 2).toString() + "px";
+       document.getElementById("left-buffer").style.width = ((window.innerWidth - hbuffer) / 2).toString() + "px";
         document.getElementById("right-buffer").style.width = ((window.innerWidth - hbuffer) / 2).toString() + "px";
         document.getElementById("right-buffer").style.left = (window.innerWidth - ((window.innerWidth - hbuffer)/2).toString() + "px");
     }
     else
     {
-        //document.getElementById("nav-logo").style.left = (20).toString() + "px";
-        document.getElementById("nav-button").style.left = (window.innerWidth - 80).toString() + "px";
         document.getElementById("left-buffer").style.width = 0;
         document.getElementById("right-buffer").style.width = 0;
         document.getElementById("right-buffer").style.left = "100vw";
     }
 
-    document.getElementById("main-quoter").style.fontSize = (l_scale * 3.55).toString() + "px";
+    //document.getElementById("main-quoter").style.fontSize = (l_scale * 3.55).toString() + "px";
 
     for(var i = 0; i < pElements.length; i++)
     {
@@ -272,9 +206,8 @@ function render()
         {
             document.getElementById("menu").style.top = "0";
             document.getElementById("menu").style.position = "fixed";
-            document.getElementById("menu").style.borderBottom = "2px solid black";
             document.getElementById("menu").style.borderTop = "none";
-            document.getElementById("menu").style.height = "8vh";
+            
             scrollpast = true;
         }
     }
@@ -282,11 +215,10 @@ function render()
     {
         if (scrollpast)
         {
-            document.getElementById("menu").style.top = "92%";
+            document.getElementById("menu").style.top = "100%";
             document.getElementById("menu").style.position = "absolute";
             document.getElementById("menu").style.borderTop = "2px solid black";
-            document.getElementById("menu").style.borderBottom = "none";
-            document.getElementById("menu").style.height = "14vh";
+            
             scrollpast = false;
         }
     }

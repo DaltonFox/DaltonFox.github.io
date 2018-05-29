@@ -36,6 +36,7 @@ input[type=checkbox] {
     transition: all 0.3s;
     box-sizing: border-box;
     float: left;
+    
 }
 .diagonal.part-2 {
     transition: all 0.3s;
@@ -43,6 +44,7 @@ input[type=checkbox] {
     position: relative;
     float: left;
     margin-top: 12px;
+    
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
     transition: all 0.3s;
@@ -54,12 +56,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
     box-sizing: border-box;
     transform: rotate(135deg);
     margin-top: 18px;
+    background-color: rgb(255, 200, 25);
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transition: all 0.3s;
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -18px;
+    background-color: rgb(255, 200, 25);
 }
 
 .hidden {
@@ -126,7 +130,7 @@ li{
 
 #main-scene {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.58);
+    background-color: rgba(255, 255, 255, 0.5);
     width:100vw;
     height:100vh;
     z-index: 0;
@@ -170,7 +174,7 @@ h3{
 }
 
 .menu_footer {
-    border-left: 2px solid rgb(60, 135, 220);
+    border-left: 2px solid rgb(255, 200, 25);
     padding-left: 2.5vw;
     padding-top: 0.25vh;
     padding-bottom: 0.25vh;
@@ -206,12 +210,13 @@ main.img{
     -webkit-backface-visibility: hidden;
     position: absolute;
     left: 0;
-    top: 92%;
+    top: 100%;
     width: 100vw;
     z-index: 1;
     background-color: rgba(255,255,255,1);
-    height:14vh;
+    height:6vh;
     transition: opacity, ease 0s;
+    border-bottom: 2px solid black;
     border-top: 2px solid black;
 }
 
@@ -250,7 +255,7 @@ a:hover{
     top: 165.65vh;
     width: 100%;
     height: 70.60vh;
-    background-color: rgb(60, 135, 220);
+    background-color: rgb(255, 200, 25);
 }
 
 #main-divider2 {
@@ -259,7 +264,7 @@ a:hover{
     top: 298.8vh;
     width: 100%;
     height: 70.70vh;
-    background-color: rgb(60, 135, 220);
+    background-color: rgb(255, 200, 25);
 }
 
 #main-divider3 {
@@ -269,7 +274,7 @@ a:hover{
     height: 9vh;
     z-index: 1;
     border-top: 3px solid black;
-    background: linear-gradient(to bottom, rgba(60, 135, 220, 0.4) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 200, 25, 0.4) 0%,rgba(255,255,255,0) 100%);
     border-bottom: 2px solid white;
 }
 
@@ -397,7 +402,7 @@ a:hover{
     pointer-events: none;
     transition: opacity 0.20s ease 0s;
     opacity: 0;
-    background-color: rgb(60, 135, 220);
+    background-color: rgb(255, 200, 25);
     width: 100vw;
     height: 100vh;
     z-index: 2;
