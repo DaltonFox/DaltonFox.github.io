@@ -289,14 +289,15 @@ a:hover{
 #main-what {
     position: absolute;
     background-color: rgb(255,255,255);
-    top: 102vh;
+    top: 100vh;
     text-align: left;
     padding-left: 3.5vw;
     font-size: 16px;
-    border-top: 200px solid whit;
+    border-top: 100px solid whit;
     width:100vw;
     height:100vh;
     z-index: 0;
+    padding-top: 10vh;
 }
 
 #main-how {
@@ -354,7 +355,7 @@ a:hover{
     top: 399vh;
     width: 100%;
     height: 10vh;
-    border-top: 2px solid rgba(0,0,0, 1);
+    border-top: 3px solid rgba(0,0,0, 1);
     background-color: rgb(255, 255, 255)
 }
 
