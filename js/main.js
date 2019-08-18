@@ -179,7 +179,7 @@ jQuery(document).ready(function($) {
 	    loop: true,
 			stagePadding: 0,
 	    margin: 0,
-	    smartSpeed: 1500,
+	    smartSpeed: 3000,
 	    autoplay: true,
 	    pauseOnHover: true,
 	    autoHeight: true,
