@@ -157,6 +157,18 @@ body:after {
     .btn.btn-primary.btn-black--hover:hover {
       background: #666666;
       color: #fff; }
+  .btn.btn-primary-2 {
+    background: #feaa24;
+    border-color: #feaa24;
+    color: #fff; }
+    .btn.btn-primary-2:hover {
+      background: #000;
+      border-color: #000;
+      color: #fff; }
+    .btn.btn-primary.btn-black--hover-2:hover {
+      background: #666666;
+      color: #fff; }
+
 
 .line-height-1 {
   line-height: 1 !important; }
