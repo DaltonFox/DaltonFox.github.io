@@ -17,6 +17,15 @@ html {
   }
 }
 
+.service-icon{
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.use-case{
+  font-size: 30px;
+  color: #40c2ff;
+}
 
 .edge-fade-right {
   position: absolute;
@@ -140,19 +149,19 @@ body:after {
 
 .btn {
   font-size: 16px;
-  border-radius: 30px;
+  border-radius: 0px;
   padding: 10px 30px; }
   .btn:hover, .btn:active, .btn:focus {
     outline: none;
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   .btn.btn-primary {
-    background: #5bc8fa;
-    border-color: #5bc8fa;
+    background: #40c2ff;
+    border-color: #40c2ff;
     color: #fff; }
     .btn.btn-primary:hover {
-      background: #000;
-      border-color: #000;
+      background: #0095ff;
+      border-color: #0095ff;
       color: #fff; }
     .btn.btn-primary.btn-black--hover:hover {
       background: #666666;
@@ -162,8 +171,8 @@ body:after {
     border-color: #feaa24;
     color: #fff; }
     .btn.btn-primary-2:hover {
-      background: #000;
-      border-color: #000;
+      background: #0095ff;
+      border-color: #0095ff;
       color: #fff; }
     .btn.btn-primary.btn-black--hover-2:hover {
       background: #666666;
@@ -661,6 +670,12 @@ body:after {
     padding-top: 10px !important;
     padding-bottom: 10px !important; }
 
+video.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Blocks */
 .site-blocks-cover {
   background-size: cover;
@@ -955,7 +970,7 @@ body:after {
             height: 4px;
             border-radius: 0%; }
           .slide-three-item .owl-dots .owl-dot:hover > span {
-            background: rgba(206, 31, 89, 0.863); }
+            background: #0095ff; }
           .slide-three-item .owl-dots .owl-dot.active > span {
             background: #5bc8fae3; }
 
@@ -1005,7 +1020,7 @@ body:after {
   height: 4px; }
   .progress .progress-bar {
     background-color: #5bc8fa;
-    background-image: linear-gradient(to right, #df004a, #5bc8fa);
+    background-image: linear-gradient(to right, #aee5ff, #5bc8fa);
     position: relative;
     border-radius: 4px; }
     .progress .progress-bar span {
