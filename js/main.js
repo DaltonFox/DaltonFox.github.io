@@ -6,6 +6,7 @@
 
  window.addEventListener('resize', refreshOwl);
  var sle = 1000;
+ 
  function refreshOwl() {
 	var slidesPerPage = 1;
 	if ($(window).width() > sle)
@@ -21,9 +22,6 @@
 jQuery(document).ready(function($) {
 
 	"use strict";
-
-	
-
 	
 
 	var siteMenuClone = function() {
@@ -299,4 +297,6 @@ jQuery(document).ready(function($) {
 	  return false;
 	});
 
+
+	$(".slide-three-item").trigger("refresh.owl.carousel");
 });
