@@ -1,6 +1,9 @@
 html {
   overflow-x: hidden;
 }
+body {
+  overflow-x: hidden;
+}
 .edge-fade-left {
   position: absolute;
   z-index: 10;
@@ -69,16 +72,31 @@ html {
   width: 20px;
   height: 550px;
 }
+@media (max-width: 767px) {
+  .edge-fade-right {
+    display: none;
+  }
+}
 .edge-fade-bleft {
   position: absolute;
-  transform: translateX(-1950%);
+  transfoax-width: 767px) {
+  .edge-fade-bleft {
+    display: none;
+  }
+}
+@media (mrm: translateX(-1950%);
   z-index: 20;
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 90%);
   height: 1065px;
 }
 @media (min-width: 1900px) {
   .edge-fade-bleft {
-    width: 20px;
+ 
+@media (max-width: 767px) {
+  .edge-fade-bright {
+    display: none;
+  }
+}   width: 20px;
   }
 }
 .edge-fade-bright {
@@ -94,7 +112,12 @@ html {
   z-index: 20;
   width: 20px;
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #6dcefb);
-  height: 320px;
+  height:ax-width: 767px) {
+  .edge-fade-aright {
+    display: none;
+  }
+}
+@media (m 320px;
 }
 .edge-fade-aright {
   position: absolute;
