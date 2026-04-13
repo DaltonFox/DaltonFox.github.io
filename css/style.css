@@ -4,6 +4,14 @@ html {
 body {
   overflow-x: hidden;
 }
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 .edge-fade-left {
   position: absolute;
   z-index: 10;
@@ -929,7 +937,12 @@ video.center {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 1;
+ 
+@media (max-width: 767px) {
+  .site-blocks-cover .img-face {
+    padding-left: 0 !important;
+  }
+} z-index: 1;
 }
 @media (max-width: 991.98px) {
   .site-blocks-cover .img-face {
