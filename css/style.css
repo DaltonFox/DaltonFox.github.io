@@ -1,17 +1,6 @@
 html {
   overflow-x: hidden;
 }
-body {
-  overflow-x: hidden;
-}
-* {
-  box-sizing: border-box;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 .edge-fade-left {
   position: absolute;
   z-index: 10;
@@ -79,11 +68,6 @@ img {
   );
   width: 20px;
   height: 550px;
-}
-@media (max-width: 767px) {
-  .edge-fade-right {
-    display: none;
-  }
 }
 .edge-fade-bleft {
   position: absolute;
